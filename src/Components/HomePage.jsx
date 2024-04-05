@@ -1,5 +1,4 @@
 import BadgeDark from "./Elements/BadgeDark";
-import BadgeLight from "./Elements/BadgeLight";
 
 export default function HomePage() {
   return (
@@ -18,46 +17,59 @@ function BestSellers() {
     <div className="best-sellers flex flex-col justify-center items-center">
       <h2 className="font-[tanker] py-20 text-4xl">Best Sellers</h2>
       <div className="flex flex-wrap max-xl:gap-10 justify-around w-full">
-        <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="card w-96 h-[32rem] bg-base-100 shadow-xl">
           <figure>
             <img
-              src="https://www.stadiumgoods.com/BWStaticContent/54000/7967ea43-1c0c-4ec8-b80b-141153e8a8b9_200406-555088-500-16.jpg"
+              src="https://images.unsplash.com/photo-1562157873-818bc0726f68?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Shoes"
+              className="object-cover object-center"
             />
           </figure>
-          <div className="card-body">
-            <h2 className="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div className="card-body gap-5">
+            <h2 className="card-title font-[tanker] text-2xl">Casual Shirts</h2>
+            <p>
+              Looking for your everyday fits? Check our casual wear collection
+            </p>
             <button className="card-actions justify-end">
               <BadgeDark icon="Buy Now" extra="px-4" />
             </button>
           </div>
         </div>
-        <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="card w-96 h-[32rem] bg-base-100 shadow-xl">
           <figure>
             <img
-              src="https://www.stadiumgoods.com/BWStaticContent/54000/7967ea43-1c0c-4ec8-b80b-141153e8a8b9_200406-555088-500-16.jpg"
+              src="https://images.pexels.com/photos/9594089/pexels-photo-9594089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt="Shoes"
+              className="object-cover object-center"
             />
           </figure>
-          <div className="card-body">
-            <h2 className="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div className="card-body gap-5">
+            <h2 className="card-title font-[tanker] text-2xl">Sweat Shirts</h2>
+            <p>
+              Our sweatshirt collection, where comfort meets style in perfect
+              harmony
+            </p>
             <button className="card-actions justify-end">
               <BadgeDark icon="Buy Now" extra="px-4" />
             </button>
           </div>
         </div>
-        <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="card w-96 h-[32rem] bg-base-100 shadow-xl">
           <figure>
             <img
-              src="https://www.stadiumgoods.com/BWStaticContent/54000/7967ea43-1c0c-4ec8-b80b-141153e8a8b9_200406-555088-500-16.jpg"
+              src="https://images.pexels.com/photos/6211655/pexels-photo-6211655.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt="Shoes"
+              className="object-cover object-center"
             />
           </figure>
-          <div className="card-body">
-            <h2 className="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div className="card-body gap-5">
+            <h2 className="card-title font-[tanker] text-2xl">
+              Winter Collection
+            </h2>
+            <p>
+              Our Winter Collection: a symphony of warmth and style to accompany
+              you.
+            </p>
             <button className="card-actions justify-end">
               <BadgeDark icon="Buy Now" extra="px-4" />
             </button>
