@@ -3,10 +3,16 @@ import NavBar from "./Components/Navbar";
 
 function App() {
   return (
-    <section className="p-2 flex flex-col gap-2">
-      <NavBar />
-      <HomePage />
-    </section>
+    <>
+      <span className="bg-neutral-content flex justify-center">
+        🔥 Winter Collection | Live Now!
+      </span>
+
+      <section className="p-2 flex flex-col gap-2">
+        <NavBar />
+        <HomePage />
+      </section>
+    </>
   );
 }
 
