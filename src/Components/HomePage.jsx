@@ -38,7 +38,7 @@ function BestSellers() {
             />
           </figure>
           <div className="card-body gap-5">
-            <h2 className="card-title font-[tanker] text-2xl">Casual Shirts</h2>
+            <h3 className="card-title font-[tanker] text-2xl">Casual Shirts</h3>
             <p>Looking for everyday fits? Check our casual wear collection</p>
             <button className="card-actions justify-end">
               <BadgeDark icon="Buy Now" extra="px-4" />
@@ -54,7 +54,7 @@ function BestSellers() {
             />
           </figure>
           <div className="card-body gap-5">
-            <h2 className="card-title font-[tanker] text-2xl">Sweat Shirts</h2>
+            <h3 className="card-title font-[tanker] text-2xl">Sweat Shirts</h3>
             <p>Where comfort meets style in perfect harmony</p>
             <button className="card-actions justify-end">
               <BadgeDark icon="Buy Now" extra="px-4" />
@@ -70,9 +70,9 @@ function BestSellers() {
             />
           </figure>
           <div className="card-body gap-5">
-            <h2 className="card-title font-[tanker] text-2xl">
+            <h3 className="card-title font-[tanker] text-2xl">
               Bomber Jackets
-            </h2>
+            </h3>
             <p>A symphony of warmth and style to accompany you</p>
             <button className="card-actions justify-end">
               <BadgeDark icon="Buy Now" extra="px-4" />
@@ -86,7 +86,7 @@ function BestSellers() {
 
 function AboutUs() {
   return (
-    <section className="collection  flex flex-col justify-center items-center">
+    <section className="collection flex flex-col justify-center items-center">
       <h2 className="font-[tanker] py-20 text-4xl">More about us</h2>
 
       <div className="flex max-md:flex-col w-full max-w-6xl gap-10 items-center ">
@@ -121,7 +121,9 @@ function AboutUs() {
                 type="text"
                 className="w-full border border-neutral bg-transparent rounded-box min-h-10 px-2"
               />
-              <BadgeDark icon="Subscribe" extra="px-5" />
+              <button type="button">
+                <BadgeDark icon="Subscribe" extra="px-4" />
+              </button>
             </span>
           </span>
         </div>

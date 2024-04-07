@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="footer footer-center p-10 mt-20 bg-base-300 text-base-content rounded-t-box">
+    <footer className="footer footer-center p-10 mt-20 bg-base-300 text-sm text-base-content rounded-t-box">
       <nav className="grid grid-flow-col gap-4">
         <a className="link link-hover">About us</a>
         <a className="link link-hover">Contact</a>

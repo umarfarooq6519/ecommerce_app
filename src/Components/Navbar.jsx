@@ -1,6 +1,6 @@
 export default function NavBar() {
   return (
-    <div className="navbar font-medium py-0 rounded-box">
+    <div className="navbar py-0 rounded-box">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -8,7 +8,7 @@ export default function NavBar() {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-md dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-lg  dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-64"
           >
             <li>
               <a>Gallery</a>
@@ -40,14 +40,14 @@ export default function NavBar() {
         <a className="btn btn-ghost font-[tanker] text-2xl">Ecommerce.</a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 ">
+        <ul className="menu text-base menu-horizontal px-1">
           <li>
             <a>Gallery</a>
           </li>
           <li>
             <details>
               <summary>Men Collection</summary>
-              <ul className="p-2 ">
+              <ul className="p-2">
                 <li>
                   <a>Western</a>
                 </li>
