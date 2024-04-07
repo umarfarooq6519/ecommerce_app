@@ -9,7 +9,7 @@ function App() {
         🔥 Winter Collection | Live Now!
       </span>
 
-      <section className="p-2 flex flex-col font-medium gap-2">
+      <section className="p-2 md:px-4 flex flex-col gap-2">
         <NavBar />
         <HomePage />
       </section>
