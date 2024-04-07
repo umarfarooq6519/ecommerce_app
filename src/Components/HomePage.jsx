@@ -89,10 +89,10 @@ function AboutUs() {
     <section className="collection  flex flex-col justify-center items-center">
       <h2 className="font-[tanker] py-20 text-4xl">More about us</h2>
 
-      <div className="flex max-md:flex-col w-full max-w-6xl gap-4 lg:gap-8  items-center ">
+      <div className="flex max-md:flex-col w-full max-w-6xl gap-10 items-center ">
         <div className="flex-1 w-full flex min-h-[35rem] p-3 justify-left rounded-box bg-[url('https://images.pexels.com/photos/5865202/pexels-photo-5865202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1080')] bg-cover bg-no-repeat bg-center"></div>
         <div className="max-xl:flex-1 xl:w-5/12 flex flex-col gap-8 items-left">
-          <p className="flex flex-col leading-relaxed gap-6 ">
+          <p className="flex flex-col leading-relaxed gap-6">
             <span className="text-3xl font-[tanker]">
               Welcome to our urban oasis, where streetwear meets cutting-edge
               fashion.
