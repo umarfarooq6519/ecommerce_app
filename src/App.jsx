@@ -1,17 +1,20 @@
+import { Outlet } from "react-router-dom";
+
 import Footer from "./Components/Footer";
-import HomePage from "./Components/HomePage";
 import NavBar from "./Components/Navbar";
 
 function App() {
   return (
     <>
-      <span className="bg-neutral text-base-100 flex justify-center">
+      <span className="Alert py-0.5 bg-neutral text-base-100 flex justify-center">
         🔥 Winter Collection | Live Now!
       </span>
 
-      <section className="p-2 md:px-4 text-[17px] flex flex-col gap-2">
+      <section className="App p-2 md:px-4 text-[17px] flex flex-col gap-2">
         <NavBar />
-        <HomePage />
+        <div id="detail">
+          <Outlet />
+        </div>
       </section>
 
       <Footer />

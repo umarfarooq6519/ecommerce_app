@@ -1,4 +1,5 @@
 import { space } from "postcss/lib/list";
+import { Link } from "react-router-dom";
 
 const listItems = [
   {
@@ -60,7 +61,9 @@ export default function NavBar() {
             {mobileMenu}
           </ul>
         </div>
-        <a className="btn btn-ghost font-[tanker] text-2xl">Ecommerce.</a>
+        <Link to="/" className="btn btn-ghost font-[tanker] text-2xl">
+          Ecommerce.
+        </Link>
       </div>
 
       {/* laptop menu */}
@@ -101,10 +104,11 @@ export default function NavBar() {
           </li>
         </ul>
       </div>
+
       <div className="navbar-end">
-        <a className="btn btn-ghost text-lg">
+        <Link to="/cart" className="btn btn-ghost text-lg">
           <i className="fa-solid fa-bag-shopping fa-xl"></i>
-        </a>
+        </Link>
       </div>
     </div>
   );
