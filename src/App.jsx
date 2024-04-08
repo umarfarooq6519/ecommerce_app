@@ -10,7 +10,7 @@ function App() {
         🔥 Winter Collection | Live Now!
       </span>
 
-      <section className="App p-2 md:px-4 text-[17px] flex flex-col gap-2">
+      <section className="App min-h-screen p-2 md:px-4 text-[17px] flex flex-col gap-2">
         <NavBar />
         <div id="detail">
           <Outlet />
