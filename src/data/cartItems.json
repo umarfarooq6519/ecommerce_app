@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "text": "Apple Airpods Pro",
+    "color": "White",
+    "size": null,
+    "quantity": 2,
+    "price": 249.99,
+    "show": true,
+    "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MTJV3_AV2?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1694014868810"
+  },
+  {
+    "id": 2,
+    "text": "Nike Airforce 1",
+    "color": "Black",
+    "size": 42,
+    "quantity": 1,
+    "price": 49.99,
+    "show": true,
+    "img": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/5eed4ad4-be65-4e3b-b0b2-40bc4e53b257/air-force-1-07-shoes-NMmm1B.png"
+  },
+  {
+    "id": 3,
+    "text": "Apple Macbook Pro",
+    "color": "Silver",
+    "size": "14\"",
+    "quantity": 1,
+    "price": 899.99,
+    "show": true,
+    "img": "https://www.paklap.pk/media/catalog/product/cache/2cc443e44e97595ea39006016c876eaa/a/p/apple-macbook-pro-13-inch-mneh3-m2-chip-rates-in-pakistan.jpg"
+  }
+]

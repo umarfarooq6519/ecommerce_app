@@ -13,7 +13,7 @@ export default function HomePage() {
           </span>
         </div>
         {/* right image */}
-        <div className="xl:w-5/12 flex p-3 justify-left min-h-[40rem] rounded-box bg-[url('https://images.pexels.com/photos/18946900/pexels-photo-18946900/free-photo-of-concepts-x-air-max-1-mellow-shoe-on-the-grass.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1080')] bg-cover bg-no-repeat bg-center">
+        <div className="xl:w-5/12 flex p-3 justify-left min-h-[40rem] rounded-box bg-[url('https://images.pexels.com/photos/18946900/pexels-photo-18946900/free-photo-of-concepts-x-air-max-1-mellow-shoe-on-the-grass.jpeg?auto=compress&cs=tinysrgb&w=900&h=750&dpr=2')] bg-cover bg-no-repeat bg-center">
           <span className="w-full py-8 flex text-left justify-end font-[tanker] text-5xl md:text-7xl flex-col max-w-xl">
             <a className="text-lime-300">sneaker collection</a>where comfort
             meets fashion
@@ -63,11 +63,11 @@ function AboutUs() {
         <div className="flex-1 w-full flex min-h-[35rem] p-3 justify-left rounded-box bg-[url('https://images.pexels.com/photos/5865202/pexels-photo-5865202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1080')] bg-cover bg-no-repeat bg-center"></div>
         <div className="max-xl:flex-1 xl:w-5/12 flex flex-col gap-8 items-left">
           <p className="flex flex-col leading-relaxed gap-6">
-            <span className="text-3xl font-[tanker]">
+            <strong className="text-3xl font-[tanker]">
               Welcome to our urban oasis, where streetwear meets cutting-edge
               fashion.
               <br />
-            </span>
+            </strong>
             <span className="text-justify">
               <span className="font-semibold">Born from the streets </span>
               and inspired by the pulse of urban culture, we strive to provide
