@@ -6,7 +6,7 @@ export default function HomePage() {
     <section className="HomePage">
       <div className="home-main text-base-100 flex max-xl:flex-col gap-3">
         {/* left image */}
-        <div className=" flex flex-1 p-3 justify-left min-h-[40rem] rounded-box bg-[url('https://img.freepik.com/free-photo/black-man-outdoor-apparel-shoot-by-water_53876-96618.jpg?w=1080&t=st=1712505871~exp=1712506471~hmac=79691873bfcd9c4ec8b773c19f4c437534d9bb3648b63c9540bf7c6e46f91fcb')] bg-cover bg-no-repeat bg-center">
+        <div className=" flex flex-1 p-3 justify-left min-h-[40rem] rounded-box bg-[url('https://images.pexels.com/photos/13897455/pexels-photo-13897455.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-no-repeat bg-center">
           <span className="w-full py-8 flex text-left justify-end font-[tanker] text-5xl md:text-7xl flex-col max-w-xl">
             Unleash your unique style with our
             <a className="text-orange-400">street wear collection</a>
