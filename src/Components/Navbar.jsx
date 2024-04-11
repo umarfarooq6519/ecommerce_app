@@ -4,23 +4,23 @@ import { Link } from "react-router-dom";
 const listItems = [
   {
     id: 0,
-    text: "Gallery",
+    text: "Sneakers",
     submenu: null,
   },
   {
     id: 1,
-    text: "Men Collection",
+    text: "Clothing",
     submenu: {
-      text: "Western",
-      text1: "Eastern",
+      text: "Summer",
+      text1: "Winter",
     },
   },
   {
     id: 2,
-    text: "Women Collection",
+    text: "Accessories",
     submenu: {
-      text: "Western",
-      text1: "Eastern",
+      text: "Wallets",
+      text1: "Eyewear",
     },
   },
 ];
@@ -68,37 +68,37 @@ export default function NavBar() {
       </div>
 
       {/* laptop menu */}
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu text-base menu-horizontal px-1">
+      <div className="navbar-center hidden lg:flex ">
+        <ul className="menu flex gap-2 text-base menu-horizontal px-1">
           <li>
-            <a>Gallery</a>
+            <a>Sneakers</a>
           </li>
           <li>
             <details>
-              <summary>Men Collection</summary>
+              <summary>Clothing</summary>
 
               {/* submenu */}
-              <ul className="p-2 bg-base-100 border border-neutral-content">
+              <ul className="p-3 bg-base-100 border border-neutral-content">
                 <li>
-                  <a>Western</a>
+                  <a>Summer</a>
                 </li>
                 <li>
-                  <a>Eastern</a>
+                  <a>Winter</a>
                 </li>
               </ul>
             </details>
           </li>
           <li>
             <details>
-              <summary>Women Collection</summary>
+              <summary>Accessories</summary>
 
               {/* submenu */}
-              <ul className="p-2 bg-base-100 border border-neutral-content">
+              <ul className="p-3 bg-base-100 border border-neutral-content">
                 <li>
-                  <a>Western</a>
+                  <a>Wallets</a>
                 </li>
                 <li>
-                  <a>Eastern</a>
+                  <a>Eyewear</a>
                 </li>
               </ul>
             </details>

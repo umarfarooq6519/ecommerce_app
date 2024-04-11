@@ -1,0 +1,162 @@
+[
+  {
+    "id": 0,
+    "liked": false,
+    "title": "T-Shirts",
+    "body": "Looking for everyday fits? Check our casual wear",
+    "rating": 4.6,
+    "price": 11.99,
+    "tag": "Summer",
+    "img": "https://images.unsplash.com/photo-1562157873-818bc0726f68?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 1,
+    "liked": true,
+    "title": "Bomber jackets",
+    "body": "A symphony of warmth and style to accompany you",
+    "rating": 4.6,
+    "price": 11.99,
+    "tag": "Winter",
+    "img": "https://images.pexels.com/photos/6211655/pexels-photo-6211655.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": 2,
+    "liked": false,
+    "title": "Casual Shirts",
+    "body": "A symphony of warmth and style to accompany you",
+    "rating": 4.6,
+    "price": 11.99,
+    "tag": "Summer / Winter",
+    "img": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 3,
+    "liked": true,
+    "title": "Sweat Shirts",
+    "body": "Where comfort meets style in perfect harmony",
+    "rating": 4.6,
+    "price": 11.99,
+    "tag": "Winter",
+    "img": "https://images.pexels.com/photos/9594089/pexels-photo-9594089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": 4,
+    "liked": true,
+    "title": "Denim jacket",
+    "body": "Elevate your casual style with our men's denim collection",
+    "rating": 4.6,
+    "price": 11.99,
+    "tag": "Winter",
+    "img": "https://images.unsplash.com/photo-1512441547630-6ef146e5af13?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 5,
+    "liked": false,
+    "title": "Hoodies",
+    "body": "Elevate your casual style with our men's denim collection",
+    "rating": 4.6,
+    "price": 11.99,
+    "tag": "Winter",
+    "img": "https://plus.unsplash.com/premium_photo-1673125510222-1a51e3a8ccb0?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 6,
+    "liked": false,
+    "title": "large Leather Wallet",
+    "body": "Elevate your casual style with our men's denim collection",
+    "rating": 4.6,
+    "price": 11.99,
+    "tag": "Accessories",
+    "img": "https://images.unsplash.com/photo-1586695262913-8eb27f881b18?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 7,
+    "liked": false,
+    "title": "Black Sunglasses",
+    "body": "Elevate your casual style with our men's denim collection",
+    "rating": 4.6,
+    "price": 11.99,
+    "tag": "Accessories",
+    "img": "https://images.unsplash.com/photo-1610555423081-85ec0b8eabac?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 8,
+    "liked": true,
+    "title": "Reading Glasses",
+    "body": "Elevate your casual style with our men's denim collection",
+    "rating": 4.6,
+    "price": 11.99,
+    "tag": "Accessories",
+    "img": "https://images.unsplash.com/photo-1576110598658-096ae24cdb97?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 9,
+    "liked": false,
+    "title": "Black Cardholder",
+    "body": "Elevate your casual style with our men's denim collection",
+    "rating": 4.6,
+    "price": 11.99,
+    "tag": "Accessories",
+    "img": "https://images.unsplash.com/photo-1601592996763-f05c9c80a7f1?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 10,
+    "liked": false,
+    "title": "Standard Wallet",
+    "body": "Elevate your casual style with our men's denim collection",
+    "rating": 4.6,
+    "price": 11.99,
+    "tag": "Accessories",
+    "img": "https://images.unsplash.com/photo-1614330316567-11d8e572db16?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 11,
+    "liked": true,
+    "title": "Brown Cardholder",
+    "body": "Elevate your casual style with our men's denim collection",
+    "rating": 4.6,
+    "price": 11.99,
+    "tag": "Accessories",
+    "img": "https://images.unsplash.com/photo-1532033375034-a29004ea9769?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 12,
+    "liked": false,
+    "title": "Round Sunglasses",
+    "body": "Elevate your casual style with our men's denim collection",
+    "rating": 4.6,
+    "price": 11.99,
+    "tag": "Accessories",
+    "img": "https://images.unsplash.com/photo-1618677426050-9e4391b7125e?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 13,
+    "liked": false,
+    "title": "Round Reading Glasses",
+    "body": "Elevate your casual style with our men's denim collection",
+    "rating": 4.6,
+    "price": 11.99,
+    "tag": "Accessories",
+    "img": "https://images.unsplash.com/photo-1580851935978-f6b4e359da3f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 14,
+    "liked": false,
+    "title": "Casual Trousers",
+    "body": "Elevate your casual style with our men's denim collection",
+    "rating": 4.6,
+    "price": 11.99,
+    "tag": "Summer / Winter",
+    "img": "https://images.unsplash.com/photo-1504198458649-3128b932f49e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 15,
+    "liked": true,
+    "title": "Denim Jeans",
+    "body": "Elevate your casual style with our men's denim collection",
+    "rating": 4.6,
+    "price": 11.99,
+    "tag": "Summer / Winter",
+    "img": "https://images.unsplash.com/photo-1624378442362-d3247e8126ec?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  }
+]
