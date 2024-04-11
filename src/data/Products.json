@@ -66,7 +66,7 @@
     "body": "Elevate your casual style with our men's denim collection",
     "rating": 4.6,
     "price": 11.99,
-    "tag": "Accessories",
+    "tag": "Wallets",
     "img": "https://images.unsplash.com/photo-1586695262913-8eb27f881b18?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
@@ -76,7 +76,7 @@
     "body": "Elevate your casual style with our men's denim collection",
     "rating": 4.6,
     "price": 11.99,
-    "tag": "Accessories",
+    "tag": "Eyewear",
     "img": "https://images.unsplash.com/photo-1610555423081-85ec0b8eabac?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
@@ -86,7 +86,7 @@
     "body": "Elevate your casual style with our men's denim collection",
     "rating": 4.6,
     "price": 11.99,
-    "tag": "Accessories",
+    "tag": "Eyewear",
     "img": "https://images.unsplash.com/photo-1576110598658-096ae24cdb97?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
@@ -96,7 +96,7 @@
     "body": "Elevate your casual style with our men's denim collection",
     "rating": 4.6,
     "price": 11.99,
-    "tag": "Accessories",
+    "tag": "Wallets",
     "img": "https://images.unsplash.com/photo-1601592996763-f05c9c80a7f1?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
@@ -106,7 +106,7 @@
     "body": "Elevate your casual style with our men's denim collection",
     "rating": 4.6,
     "price": 11.99,
-    "tag": "Accessories",
+    "tag": "Wallets",
     "img": "https://images.unsplash.com/photo-1614330316567-11d8e572db16?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
@@ -116,7 +116,7 @@
     "body": "Elevate your casual style with our men's denim collection",
     "rating": 4.6,
     "price": 11.99,
-    "tag": "Accessories",
+    "tag": "Wallets",
     "img": "https://images.unsplash.com/photo-1532033375034-a29004ea9769?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
@@ -126,7 +126,7 @@
     "body": "Elevate your casual style with our men's denim collection",
     "rating": 4.6,
     "price": 11.99,
-    "tag": "Accessories",
+    "tag": "Eyewear",
     "img": "https://images.unsplash.com/photo-1618677426050-9e4391b7125e?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
@@ -136,7 +136,7 @@
     "body": "Elevate your casual style with our men's denim collection",
     "rating": 4.6,
     "price": 11.99,
-    "tag": "Accessories",
+    "tag": "Eyewear",
     "img": "https://images.unsplash.com/photo-1580851935978-f6b4e359da3f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
@@ -160,7 +160,7 @@
     "img": "https://images.unsplash.com/photo-1624378442362-d3247e8126ec?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
-    "id": 15,
+    "id": 16,
     "liked": false,
     "title": "Polo Shirts",
     "body": "Elevate your casual style with our men's denim collection",
@@ -168,5 +168,45 @@
     "price": 11.99,
     "tag": "Summer",
     "img": "https://images.unsplash.com/photo-1625910513413-c23b8bb81cba?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 17,
+    "liked": false,
+    "title": "Airforce 1",
+    "body": "Elevate your casual style with our men's denim collection",
+    "rating": 4.6,
+    "price": 11.99,
+    "tag": "Sneakers",
+    "img": "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 18,
+    "liked": true,
+    "title": "Air Jordans",
+    "body": "Elevate your casual style with our men's denim collection",
+    "rating": 4.6,
+    "price": 11.99,
+    "tag": "Sneakers",
+    "img": "https://images.unsplash.com/photo-1597045566677-8cf032ed6634?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 19,
+    "liked": false,
+    "title": "Nike Running Shoes",
+    "body": "Elevate your casual style with our men's denim collection",
+    "rating": 4.6,
+    "price": 11.99,
+    "tag": "Sneakers",
+    "img": "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 20,
+    "liked": true,
+    "title": "White Converse",
+    "body": "Elevate your casual style with our men's denim collection",
+    "rating": 4.6,
+    "price": 11.99,
+    "tag": "Sneakers",
+    "img": "https://images.unsplash.com/photo-1621665421558-831f91fd0500?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   }
 ]

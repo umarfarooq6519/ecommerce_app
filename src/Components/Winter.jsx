@@ -1,17 +1,17 @@
 import Collection from "./Collection";
 
-const WinterData = {
+const data = {
   crumb1: "Clothing",
   crumb2: "Winter",
   title: "Winter Collection",
 };
 
-export default function Summer() {
+export default function Winter() {
   return (
     <Collection
-      crumb1={WinterData.crumb1}
-      crumb2={WinterData.crumb2}
-      title={WinterData.title}
+      crumb1={data.crumb1}
+      crumb2={data.crumb2}
+      title={data.title}
       tag1="Winter"
       tag2="Summer / Winter"
     />
