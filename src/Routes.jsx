@@ -5,7 +5,8 @@ import App from "./App.jsx";
 import ErrorPage from "./Components/ErrorPage.jsx";
 import CartPage from "./Components/CartPage.jsx";
 import HomePage from "./Components/HomePage.jsx";
-import MenCollection from "./Components/MenCollection.jsx";
+import Summer from "./Components/Summer.jsx";
+import Winter from "./Components/Winter.jsx";
 
 const router = createBrowserRouter([
   {
@@ -24,8 +25,13 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage />,
       },
       {
-        path: "/men",
-        element: <MenCollection />,
+        path: "/summer",
+        element: <Summer />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/winter",
+        element: <Winter />,
         errorElement: <ErrorPage />,
       },
     ],
