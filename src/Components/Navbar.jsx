@@ -47,7 +47,7 @@ const mobileMenu = listItems.map((item) => {
 
 export default function NavBar() {
   return (
-    <div className="navbar font-medium py-0 rounded-box">
+    <div className="navbar z-50 font-medium py-0 rounded-box">
       <div className="navbar-start">
         {/* mobile menu */}
         <div className="dropdown">

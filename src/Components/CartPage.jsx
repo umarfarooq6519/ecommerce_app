@@ -7,9 +7,9 @@ import cartItemsData from "../data/cartItems.json"; // Import the cartItems arra
 function CartState() {
   return (
     <ul className="flex gap-4 items-center">
-      <li className="font-semibold">Cart</li>
-      <hr className="border-t border-neutral w-10" />
-      <li>Checkout</li>
+      <li>
+        <b>Checkout</b>
+      </li>
       <hr className="border-t border-neutral w-10" />
       <li>Payment</li>
     </ul>
@@ -130,7 +130,7 @@ export default function CartPage() {
         </li>
       ))
     ) : (
-      <span className="text-gray-500">No Items Added 😔 </span>
+      <span className="text-gray-500 pb-6">No Items Added 😔 </span>
     );
 
   const alertDiv = showAlert && <AlertDiv key="alert" />;
@@ -138,7 +138,7 @@ export default function CartPage() {
   // ##################### cart page main function  #####################
   return (
     <section className="CartPage flex flex-col gap-8">
-      <span className="w-full flex max-md:flex-col items-left gap-3 justify-between">
+      <span className="px-5 w-full flex max-md:flex-col items-left gap-3 justify-between">
         <h2 className="text-4xl font-[tanker]">Shopping Cart</h2>
         <CartState />
       </span>
@@ -172,7 +172,10 @@ export default function CartPage() {
               <b>{`$${total > 0 ? total.toFixed(2) : "0.00"}`} </b>
             </span>
           </span>
-          <button className="mt-2">
+          <button
+            className={`mt-2 disabled:opacity-40`}
+            disabled={itemQuantity.length === 0}
+          >
             <BadgeDark icon="Proceed to Checkout" extra="w-full" />
           </button>
           <hr className="border-t border-neutral" />
