@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+import MenProducts from "../data/MenProducts.json";
 import BadgeDark from "./Elements/BadgeDark";
 import ProductCard from "./Elements/ProductCard";
 
@@ -27,26 +29,108 @@ export default function HomePage() {
   );
 }
 
+function CountDown() {
+  const [hours, setHours] = useState(10);
+  const [minutes, setMinutes] = useState(24);
+  const [seconds, setSeconds] = useState(41);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      if (seconds > 0) {
+        setSeconds(seconds - 1);
+      } else {
+        if (minutes > 0) {
+          setMinutes(minutes - 1);
+          setSeconds(59);
+        } else {
+          if (hours > 0) {
+            setHours(hours - 1);
+            setMinutes(59);
+            setSeconds(59);
+          } else {
+            clearInterval(timer);
+          }
+        }
+      }
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [hours, minutes, seconds]);
+
+  return (
+    <div className="grid items-center grid-flow-col gap-2 text-center auto-cols-max">
+      <div className="flex items-center gap-2 p-2 bg-neutral rounded-box text-neutral-content">
+        <span className="countdown font-mono text-xl">
+          <span style={{ "--value": hours }}></span>
+        </span>
+        hours
+      </div>
+      <b className="text-xl">:</b>
+      <div className="flex items-center gap-2 p-2 bg-neutral rounded-box text-neutral-content">
+        <span className="countdown font-mono text-xl">
+          <span style={{ "--value": minutes }}></span>
+        </span>
+        min
+      </div>
+      <b className="text-xl">:</b>
+      <div className="flex items-center gap-2 p-2 bg-neutral rounded-box text-neutral-content">
+        <span className="countdown font-mono text-xl">
+          <span style={{ "--value": seconds }}></span>
+        </span>
+        sec
+      </div>
+    </div>
+  );
+}
+
 function BestSellers() {
   return (
     <div className="best-sellers flex flex-col justify-center items-center">
-      <h2 className="font-[tanker] py-20 text-4xl">Best Sellers</h2>
+      <span className="py-20 flex flex-col items-center justify-center gap-4">
+        <h2 className="font-[tanker] text-4xl">
+          <i className="fa-solid fa-bolt fa-sm pr-1"></i> Flash Sale
+        </h2>
+        <CountDown />
+      </span>
+
       <ul className="flex flex-wrap max-xl:gap-10 justify-around w-full">
         <ProductCard
           img="https://images.unsplash.com/photo-1562157873-818bc0726f68?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           title="Casual Shirts"
-          body="Looking for everyday fits? Check our casual wear collection"
+          rating="4.6"
+          tag="Summer"
+          liked={false}
+          price="11.99"
+          body="Looking for everyday fits? Check our casual wear"
         />
 
         <ProductCard
           img="https://images.pexels.com/photos/6211655/pexels-photo-6211655.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
           title="Bomber jackets"
+          rating="4.6"
+          price="11.99"
+          liked={true}
+          tag="Winter"
+          body="A symphony of warmth and style to accompany you"
+        />
+
+        <ProductCard
+          img="https://images.pexels.com/photos/1566421/pexels-photo-1566421.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          title="Formal Wear"
+          rating="4.6"
+          price="11.99"
+          tag="Formal"
+          liked={false}
           body="A symphony of warmth and style to accompany you"
         />
 
         <ProductCard
           img="https://images.pexels.com/photos/9594089/pexels-photo-9594089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
           title="Sweat Shirts"
+          rating="4.6"
+          price="11.99"
+          liked={true}
+          tag="Winter"
           body="Where comfort meets style in perfect harmony"
         />
       </ul>
