@@ -54,9 +54,10 @@ export default function NavBar() {
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <i className="fa-solid fa-bars fa-xl"></i>
           </div>
+
           <ul
             tabIndex={0}
-            className="menu menu-lg dropdown-content mt-3 z-[1] p-2 bg-neutral-content rounded-box w-64"
+            className="menu menu-lg dropdown-content mt-3 z-[1] p-2 bg-base-100 border border-neutral-content rounded-box w-64"
           >
             {mobileMenu}
           </ul>
@@ -77,7 +78,7 @@ export default function NavBar() {
               <summary>Men Collection</summary>
 
               {/* submenu */}
-              <ul className="p-2 bg-neutral-content">
+              <ul className="p-2 bg-base-100 border border-neutral-content">
                 <li>
                   <a>Western</a>
                 </li>
@@ -92,7 +93,7 @@ export default function NavBar() {
               <summary>Women Collection</summary>
 
               {/* submenu */}
-              <ul className="p-2 bg-neutral-content">
+              <ul className="p-2 bg-base-100 border border-neutral-content">
                 <li>
                   <a>Western</a>
                 </li>
