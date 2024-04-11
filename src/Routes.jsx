@@ -7,6 +7,9 @@ import CartPage from "./Components/CartPage.jsx";
 import HomePage from "./Components/HomePage.jsx";
 import Summer from "./Components/Summer.jsx";
 import Winter from "./Components/Winter.jsx";
+import Wallet from "./Components/Wallets.jsx";
+import Eyewear from "./Components/Eyewear.jsx";
+import Footwear from "./Components/Footwear.jsx";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +35,21 @@ const router = createBrowserRouter([
       {
         path: "/winter",
         element: <Winter />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/wallets",
+        element: <Wallet />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/eyewear",
+        element: <Eyewear />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/footwear",
+        element: <Footwear />,
         errorElement: <ErrorPage />,
       },
     ],

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const listItems = [
   {
     id: 0,
-    text: "Sneakers",
+    text: "Footwear",
     submenu: null,
   },
   {
@@ -42,7 +42,7 @@ const menu = listItems.map((item) => {
           </ul>
         </details>
       ) : (
-        <a>{item.text}</a>
+        <Link to="/footwear">{item.text}</Link>
       )}
     </li>
   );
