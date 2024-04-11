@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import MenProducts from "../data/MenProducts.json";
+import ProductsJson from "../data/Products.json";
 import BadgeDark from "./Elements/BadgeDark";
 import ProductCard from "./Elements/ProductCard";
 
@@ -93,48 +93,27 @@ function BestSellers() {
         <CountDown />
       </span>
 
-      <ul className="flex flex-wrap max-xl:gap-10 justify-around w-full">
-        <ProductCard
-          img="https://images.unsplash.com/photo-1562157873-818bc0726f68?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          title="Casual Shirts"
-          rating="4.6"
-          tag="Summer"
-          liked={false}
-          price="11.99"
-          body="Looking for everyday fits? Check our casual wear"
-        />
-
-        <ProductCard
-          img="https://images.pexels.com/photos/6211655/pexels-photo-6211655.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-          title="Bomber jackets"
-          rating="4.6"
-          price="11.99"
-          liked={true}
-          tag="Winter"
-          body="A symphony of warmth and style to accompany you"
-        />
-
-        <ProductCard
-          img="https://images.pexels.com/photos/1566421/pexels-photo-1566421.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-          title="Formal Wear"
-          rating="4.6"
-          price="11.99"
-          tag="Formal"
-          liked={false}
-          body="A symphony of warmth and style to accompany you"
-        />
-
-        <ProductCard
-          img="https://images.pexels.com/photos/9594089/pexels-photo-9594089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-          title="Sweat Shirts"
-          rating="4.6"
-          price="11.99"
-          liked={true}
-          tag="Winter"
-          body="Where comfort meets style in perfect harmony"
-        />
-      </ul>
+      <Products />
     </div>
+  );
+}
+
+function Products() {
+  return (
+    <ul className="flex flex-wrap max-xl:gap-10 justify-around w-full">
+      {ProductsJson.slice(0, 4).map((product, index) => (
+        <ProductCard
+          key={index}
+          img={product.img}
+          title={product.title}
+          rating={product.rating}
+          price={product.price}
+          liked={product.liked}
+          tag={product.tag}
+          body={product.body}
+        />
+      ))}
+    </ul>
   );
 }
 

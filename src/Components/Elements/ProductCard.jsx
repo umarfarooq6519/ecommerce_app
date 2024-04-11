@@ -4,8 +4,12 @@ export default function ProductCard(props) {
   const { img, title, rating, price, tag, liked } = props;
   return (
     <li className="card w-[19rem] h-[26rem] bg-base-100 border border-neutral-content">
-      <figure>
-        <img src={img} alt="Shoes" className="object-cover object-center" />
+      <figure className="min-h-60">
+        <img
+          src={img}
+          alt="Shoes"
+          className="w-full h-full object-cover object-center"
+        />
       </figure>
       <div className="card-body p-5 gap-5">
         <span className="flex items-center gap-3">
