@@ -11,37 +11,40 @@ const listItems = [
     id: 1,
     text: "Clothing",
     submenu: {
-      text: "Summer",
-      text1: "Winter",
+      sub1: "Summer",
+      sub2: "Winter",
     },
   },
   {
     id: 2,
     text: "Accessories",
     submenu: {
-      text: "Wallets",
-      text1: "Eyewear",
+      sub1: "Wallets",
+      sub2: "Eyewear",
     },
   },
 ];
 
-const mobileMenu = listItems.map((item) => {
+const menu = listItems.map((item) => {
   return (
-    <span key={item.id}>
-      <li>
-        <a>{item.text}</a>
-        {item.submenu !== null && (
-          <ul className="p-2">
+    <li key={item.id}>
+      {item.submenu ? (
+        <details>
+          <summary>{item.text}</summary>
+          {/* submenu */}
+          <ul className="p-3 bg-base-100">
             <li>
-              <a>{item.submenu.text}</a>
+              <Link to={`/${item.submenu.sub1}`}>{item.submenu.sub1}</Link>
             </li>
             <li>
-              <a>{item.submenu.text1}</a>
+              <Link to={`/${item.submenu.sub2}`}>{item.submenu.sub2}</Link>
             </li>
           </ul>
-        )}
-      </li>
-    </span>
+        </details>
+      ) : (
+        <a>{item.text}</a>
+      )}
+    </li>
   );
 });
 
@@ -55,11 +58,12 @@ export default function NavBar() {
             <i className="fa-solid fa-bars fa-xl"></i>
           </div>
 
+          {/* mobileMenu */}
           <ul
             tabIndex={0}
             className="menu menu-lg dropdown-content mt-3 z-[1] p-2 bg-base-100 border border-neutral-content rounded-box w-64"
           >
-            {mobileMenu}
+            {menu}
           </ul>
         </div>
         <Link to="/" className="btn btn-ghost font-[tanker] text-2xl">
@@ -70,39 +74,7 @@ export default function NavBar() {
       {/* laptop menu */}
       <div className="navbar-center hidden lg:flex ">
         <ul className="menu flex gap-2 text-base menu-horizontal px-1">
-          <li>
-            <a>Sneakers</a>
-          </li>
-          <li>
-            <details>
-              <summary>Clothing</summary>
-
-              {/* submenu */}
-              <ul className="p-3 bg-base-100 border border-neutral-content">
-                <li>
-                  <a>Summer</a>
-                </li>
-                <li>
-                  <a>Winter</a>
-                </li>
-              </ul>
-            </details>
-          </li>
-          <li>
-            <details>
-              <summary>Accessories</summary>
-
-              {/* submenu */}
-              <ul className="p-3 bg-base-100 border border-neutral-content">
-                <li>
-                  <a>Wallets</a>
-                </li>
-                <li>
-                  <a>Eyewear</a>
-                </li>
-              </ul>
-            </details>
-          </li>
+          {menu}
         </ul>
       </div>
 

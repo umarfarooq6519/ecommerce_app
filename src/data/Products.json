@@ -158,5 +158,15 @@
     "price": 11.99,
     "tag": "Summer / Winter",
     "img": "https://images.unsplash.com/photo-1624378442362-d3247e8126ec?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 15,
+    "liked": false,
+    "title": "Polo Shirts",
+    "body": "Elevate your casual style with our men's denim collection",
+    "rating": 4.6,
+    "price": 11.99,
+    "tag": "Summer",
+    "img": "https://images.unsplash.com/photo-1625910513413-c23b8bb81cba?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   }
 ]
