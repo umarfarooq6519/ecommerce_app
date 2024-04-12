@@ -8,7 +8,6 @@ export function Filter() {
       <li>
         <b>Sort by Rating</b>
       </li>
-      {/* <hr className="border-t border-neutral w-8" /> */}
       <li className="pl-5">Sort by Latest</li>
     </ul>
   );
