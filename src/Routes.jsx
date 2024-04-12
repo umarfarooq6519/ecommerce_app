@@ -31,7 +31,7 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage />,
       },
       {
-        path: "/liked",
+        path: "/likes",
         element: <LikedProducts />,
         errorElement: <ErrorPage />,
       },
