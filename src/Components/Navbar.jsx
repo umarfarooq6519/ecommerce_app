@@ -100,7 +100,7 @@ export default function NavBar() {
 
       <div className="navbar-end items-center">
         <span className="bg-neutral-content p-2 px-4 rounded-box flex gap-4 items-center">
-          <Link to="/liked">
+          <Link to="/likes">
             <i class="fa-solid fa-heart fa-lg"></i>
           </Link>
           <Link to="/cart">
