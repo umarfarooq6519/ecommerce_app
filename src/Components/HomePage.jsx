@@ -1,25 +1,49 @@
 import { useState, useEffect } from "react";
 import ProductsJson from "../data/Products.json";
 import BadgeDark from "./Elements/BadgeDark";
+import BadgeLight from "./Elements/BadgeLight";
 import ProductCard from "./Elements/ProductCard";
 
 export default function HomePage() {
+  const arrowUpRight = (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="currentColor"
+      className="w-5 h-5"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+      />
+    </svg>
+  );
+
   return (
     <section className="HomePage">
       <div className="home-main text-base-100 flex max-xl:flex-col gap-3">
         {/* left image */}
-        <div className=" flex flex-1 p-3 justify-left min-h-[40rem] rounded-box bg-[url('https://images.pexels.com/photos/13897455/pexels-photo-13897455.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-no-repeat bg-center">
-          <span className="w-full py-8 flex text-left justify-end font-[tanker] text-5xl md:text-7xl flex-col max-w-xl">
+        <div className="flex justify-between flex-1 p-3 justify-left min-h-[40rem] rounded-box bg-[url('https://images.pexels.com/photos/13897455/pexels-photo-13897455.jpeg?auto=compress&cs=tinysrgb&w=900&h=750&dpr=2')] bg-cover bg-no-repeat bg-center">
+          <span className="w-fit py-8 flex text-left justify-end font-[tanker] text-5xl md:text-7xl flex-col max-w-xl">
             Unleash your unique style with our
-            <a className="text-orange-400">street wear collection</a>
+            <a className="text-orange-400 underline underline-offset-4 decoration-4">
+              street wear collection
+            </a>
           </span>
+          <BadgeLight icon={arrowUpRight} extra="font-medium" />
         </div>
         {/* right image */}
         <div className="xl:w-5/12 flex p-3 justify-left min-h-[40rem] rounded-box bg-[url('https://images.pexels.com/photos/18946900/pexels-photo-18946900/free-photo-of-concepts-x-air-max-1-mellow-shoe-on-the-grass.jpeg?auto=compress&cs=tinysrgb&w=900&h=750&dpr=2')] bg-cover bg-no-repeat bg-center">
           <span className="w-full py-8 flex text-left justify-end font-[tanker] text-5xl md:text-7xl flex-col max-w-xl">
-            <a className="text-lime-300">sneaker collection</a>where comfort
-            meets fashion
+            <a className="text-lime-300 underline underline-offset-4 decoration-4">
+              sneaker collection
+            </a>
+            where comfort meets fashion
           </span>
+          <BadgeLight icon={arrowUpRight} extra="font-medium" />
         </div>
       </div>
 
@@ -59,22 +83,22 @@ function CountDown() {
 
   return (
     <div className="grid items-center grid-flow-col gap-2 text-center auto-cols-max">
-      <div className="flex items-center gap-2 p-2 bg-neutral rounded-box text-neutral-content">
-        <span className="countdown font-mono text-xl">
+      <div className="ml-3 flex items-center gap-2 p-1.5 px-3y bg-neutral rounded-box text-neutral-content">
+        <span className="countdown font-mono ">
           <span style={{ "--value": hours }}></span>
         </span>
         hours
       </div>
       <b className="text-xl">:</b>
-      <div className="flex items-center gap-2 p-2 bg-neutral rounded-box text-neutral-content">
-        <span className="countdown font-mono text-xl">
+      <div className="flex items-center gap-2 p-1.5 px-3 bg-neutral rounded-box text-neutral-content">
+        <span className="countdown font-mono ">
           <span style={{ "--value": minutes }}></span>
         </span>
         min
       </div>
       <b className="text-xl">:</b>
-      <div className="flex items-center gap-2 p-2 bg-neutral rounded-box text-neutral-content">
-        <span className="countdown font-mono text-xl">
+      <div className="flex items-center gap-2 p-1.5 px-3 bg-neutral rounded-box text-neutral-content">
+        <span className="countdown font-mono ">
           <span style={{ "--value": seconds }}></span>
         </span>
         sec
@@ -125,7 +149,7 @@ function AboutUs() {
       <div className="flex max-md:flex-col w-full max-w-6xl gap-10 items-center ">
         <div className="flex-1 w-full flex min-h-[35rem] p-3 justify-left rounded-box bg-[url('https://images.pexels.com/photos/5865202/pexels-photo-5865202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1080')] bg-cover bg-no-repeat bg-center"></div>
         <div className="max-xl:flex-1 xl:w-5/12 flex flex-col gap-8 items-left">
-          <p className="flex flex-col leading-relaxed gap-6">
+          <p className="flex flex-col lg:leading-relaxed gap-6">
             <strong className="text-3xl font-[tanker]">
               Welcome to our urban oasis, where streetwear meets cutting-edge
               fashion.

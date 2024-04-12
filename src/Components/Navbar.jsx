@@ -35,7 +35,7 @@ const menu = listItems.map((item) => {
         <details>
           <summary className="hover:rounded-box">{item.text}</summary>
           {/* submenu */}
-          <ul className="p-3 bg-base-100">
+          <ul className="p-2 bg-base-100">
             <li>
               <Link className="hover:rounded-box" to={`/${item.submenu.link0}`}>
                 {item.submenu.sub0}
@@ -74,7 +74,7 @@ export default function NavBar() {
       <div className="navbar-start">
         {/* mobile menu */}
         <div className="dropdown">
-          <button tabIndex={0} role="button" className="lg:hidden mr-4">
+          <button tabIndex={0} role="button" className="lg:hidden mr-3">
             <i className="fa-solid fa-bars fa-xl"></i>
           </button>
 
@@ -93,18 +93,22 @@ export default function NavBar() {
 
       {/* laptop menu */}
       <div className="navbar-center hidden lg:flex ">
-        <ul className="menu flex gap-2 text-base menu-horizontal px-1">
-          {menu}
-        </ul>
+        <ul className="menu flex gap-1 text-base menu-horizontal">{menu}</ul>
       </div>
 
       <div className="navbar-end items-center">
-        <span className="bg-neutral-content p-2 px-4 rounded-box flex gap-4 items-center">
-          <Link to="/likes">
-            <i class="fa-solid fa-heart fa-lg"></i>
+        <span className="flex gap-2 items-center">
+          <Link
+            to="/likes"
+            className="flex items-center justify-center border border-neutral-content h-10 w-10 rounded-full"
+          >
+            <i className="fa-regular fa-heart fa-lg mt-0.5"></i>
           </Link>
-          <Link to="/cart">
-            <i className="fa-solid fa-bag-shopping text-neutral fa-lg"></i>
+          <Link
+            to="/cart"
+            className="flex text-base items-center justify-center bg-neutral text-base-100 h-10 w-10 rounded-full"
+          >
+            <i className="fa-solid fa-bag-shopping fa-lg"></i>
           </Link>
         </span>
       </div>
