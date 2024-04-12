@@ -5,11 +5,14 @@ import App from "./App.jsx";
 import ErrorPage from "./Components/ErrorPage.jsx";
 import CartPage from "./Components/CartPage.jsx";
 import HomePage from "./Components/HomePage.jsx";
+import AllClothing from "./Components/AllClothing.jsx";
 import Summer from "./Components/Summer.jsx";
 import Winter from "./Components/Winter.jsx";
 import Wallet from "./Components/Wallets.jsx";
 import Eyewear from "./Components/Eyewear.jsx";
 import Footwear from "./Components/Footwear.jsx";
+import LikedProducts from "./Components/LikedProducts.jsx";
+import AllAccessories from "./Components/AllAccessories.jsx";
 
 const router = createBrowserRouter([
   {
@@ -28,22 +31,37 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage />,
       },
       {
-        path: "/summer",
+        path: "/liked",
+        element: <LikedProducts />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "clothing",
+        element: <AllClothing />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/clothing/summer",
         element: <Summer />,
         errorElement: <ErrorPage />,
       },
       {
-        path: "/winter",
+        path: "/clothing/winter",
         element: <Winter />,
         errorElement: <ErrorPage />,
       },
       {
-        path: "/wallets",
+        path: "/accessories",
+        element: <AllAccessories />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/accessories/wallets",
         element: <Wallet />,
         errorElement: <ErrorPage />,
       },
       {
-        path: "/eyewear",
+        path: "/accessories/eyewear",
         element: <Eyewear />,
         errorElement: <ErrorPage />,
       },
