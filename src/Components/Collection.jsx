@@ -2,21 +2,26 @@ import BreadCrumbs from "./Elements/Breadcrumbs";
 import ProductCard from "./Elements/ProductCard";
 import ProductsJson from "../data/Products.json";
 
-function Filter() {
+export function Filter() {
   return (
     <ul className="flex divide-x divide-current gap-4 items-center">
       <li>
-        <b>Rating</b>
+        <b>Sort by Rating</b>
       </li>
       {/* <hr className="border-t border-neutral w-8" /> */}
-      <li className="pl-5">Latest</li>
-      {/* <hr className="border-t border-neutral w-8" /> */}
-      <li className="pl-5">Price</li>
+      <li className="pl-5">Sort by Latest</li>
     </ul>
   );
 }
 
-export default function Collection({ crumb1, crumb2, title, tag1, tag2 }) {
+export default function Collection({
+  crumb1,
+  crumb2,
+  title,
+  tag1,
+  tag2,
+  tag3,
+}) {
   return (
     <section className="flex flex-col gap-5">
       <span className="px-5">
@@ -30,7 +35,8 @@ export default function Collection({ crumb1, crumb2, title, tag1, tag2 }) {
       {/* products */}
       <ul className="flex flex-wrap gap-4 lg:gap-8 justify-around w-full">
         {ProductsJson.filter(
-          (product) => product.tag === tag1 || product.tag === tag2
+          (product) =>
+            product.tag === tag1 || product.tag === tag2 || product.tag === tag3
         ).map((product, index) => (
           <ProductCard
             key={index}

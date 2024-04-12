@@ -1,4 +1,3 @@
-import { space } from "postcss/lib/list";
 import { Link } from "react-router-dom";
 
 const listItems = [
@@ -11,6 +10,8 @@ const listItems = [
     id: 1,
     text: "Clothing",
     submenu: {
+      sub0: "View All",
+      link0: "clothing",
       sub1: "Summer",
       sub2: "Winter",
     },
@@ -19,6 +20,8 @@ const listItems = [
     id: 2,
     text: "Accessories",
     submenu: {
+      sub0: "View All",
+      link0: "accessories",
       sub1: "Wallets",
       sub2: "Eyewear",
     },
@@ -30,19 +33,36 @@ const menu = listItems.map((item) => {
     <li key={item.id}>
       {item.submenu ? (
         <details>
-          <summary>{item.text}</summary>
+          <summary className="hover:rounded-box">{item.text}</summary>
           {/* submenu */}
           <ul className="p-3 bg-base-100">
             <li>
-              <Link to={`/${item.submenu.sub1}`}>{item.submenu.sub1}</Link>
+              <Link className="hover:rounded-box" to={`/${item.submenu.link0}`}>
+                {item.submenu.sub0}
+              </Link>
             </li>
             <li>
-              <Link to={`/${item.submenu.sub2}`}>{item.submenu.sub2}</Link>
+              <Link
+                className="hover:rounded-box"
+                to={`/${item.text}/${item.submenu.sub1}`}
+              >
+                {item.submenu.sub1}
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="hover:rounded-box"
+                to={`/${item.text}/${item.submenu.sub2}`}
+              >
+                {item.submenu.sub2}
+              </Link>
             </li>
           </ul>
         </details>
       ) : (
-        <Link to="/footwear">{item.text}</Link>
+        <Link to="/footwear" className="hover:rounded-box">
+          {item.text}
+        </Link>
       )}
     </li>
   );
@@ -50,13 +70,13 @@ const menu = listItems.map((item) => {
 
 export default function NavBar() {
   return (
-    <div className="navbar z-50 font-medium py-0 rounded-box">
+    <div className="navbar z-50 font-medium py-0 px-5 rounded-box">
       <div className="navbar-start">
         {/* mobile menu */}
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <button tabIndex={0} role="button" className="lg:hidden mr-4">
             <i className="fa-solid fa-bars fa-xl"></i>
-          </div>
+          </button>
 
           {/* mobileMenu */}
           <ul
@@ -66,7 +86,7 @@ export default function NavBar() {
             {menu}
           </ul>
         </div>
-        <Link to="/" className="btn btn-ghost font-[tanker] text-2xl">
+        <Link to="/" className="font-[tanker] text-2xl">
           Ecommerce.
         </Link>
       </div>
@@ -78,10 +98,15 @@ export default function NavBar() {
         </ul>
       </div>
 
-      <div className="navbar-end">
-        <Link to="/cart" className="btn btn-ghost text-lg">
-          <i className="fa-solid fa-bag-shopping fa-xl"></i>
-        </Link>
+      <div className="navbar-end items-center">
+        <span className="bg-neutral-content p-2 px-4 rounded-box flex gap-4 items-center">
+          <Link to="/liked">
+            <i class="fa-solid fa-heart fa-lg"></i>
+          </Link>
+          <Link to="/cart">
+            <i className="fa-solid fa-bag-shopping text-neutral fa-lg"></i>
+          </Link>
+        </span>
       </div>
     </div>
   );
